@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),url(https://cdn.pixabay.com/photo/2018/08/21/23/29/fog-3622519__480.jpg) ;
+    background-position: center ;
+    background-size: cover;
+}
+#drone-box{
+    margin: 150px auto;
+    transition: 2s;
+    width: 160px;
+    position: relative;
+}
+.drone{
+    width: 100%;
+}
+.drone-left{
+    width: 70px;
+    top: 0;
+    left: -11px;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+.drone-right{
+    width: 70px;
+    top: 0;
+    right: -11px;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+@keyframes rotation{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
